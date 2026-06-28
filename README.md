@@ -30,7 +30,7 @@ Google Sheets → Google Gemini AI → PDF.co → Google Drive → Gmail → Goo
 
 > 📷 Visual representation of the Make.com automation scenario.
 
-![Make Scenario Diagram](./assets/workflow-diagram.png)
+![Make Scenario Diagram](assets/workflow-diagram.png)
 
 ## 🔄 Workflow Diagram
 
