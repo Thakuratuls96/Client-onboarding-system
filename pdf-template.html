@@ -1,139 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-        font-family: 'Segoe UI', Tahoma, sans-serif;
-        background: #f4f7fc;
-        padding: 0;
-        margin: 0;
-      }
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #0D0D0D; background: #fff; font-size: 13px; }
 
-      .container {
-        max-width: 800px;
-        margin: 40px auto;
-        background: #fff;
-        border: 4px solid #2c3e50;
-        border-radius: 10px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-        padding: 40px;
-      }
+  /* HEADER */
+  .header { background: #0D0D0D; padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; }
+  .header .logo { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: 1px; }
+  .header .tagline { font-size: 10px; color: #A0AEC0; }
+  .accent-bar { height: 5px; background: #00C4A7; }
 
-      .header {
-        text-align: center;
-        border-bottom: 2px solid #2c3e50;
-        padding-bottom: 20px;
-      }
+  /* BODY */
+  .body { padding: 20px 24px 16px; }
 
-      .company-name {
-        font-size: 32px;
-        font-weight: 800;
-        color: #2c3e50;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
+  /* TITLE */
+  .doc-title { font-size: 20px; font-weight: 700; color: #0D0D0D; margin-bottom: 5px; }
+  .doc-sub { font-size: 8.5px; color: #64748B; margin-bottom: 12px; }
+  .divider { border: none; border-top: 0.8px solid #E2E8F0; margin-bottom: 14px; }
 
-      .subtitle {
-        font-size: 18px;
-        color: #7f8c8d;
-        margin-top: 5px;
-      }
+  /* SECTION TITLE */
+  .section-title { font-size: 11px; font-weight: 700; color: #00C4A7; margin-bottom: 8px; }
 
-      .section {
-        margin-top: 40px;
-      }
+  /* CLIENT INFO TABLE */
+  .info-table { width: 100%; border-collapse: collapse; margin-bottom: 14px; }
+  .info-table tr:nth-child(odd)  { background: #fff; }
+  .info-table tr:nth-child(even) { background: #F8F9FA; }
+  .info-table td { padding: 7px 12px; border-bottom: 0.4px solid #E2E8F0; vertical-align: middle; }
+  .info-table td.label { font-size: 8px; font-weight: 700; color: #64748B; width: 30%; }
+  .info-table td.value { font-size: 10px; color: #0D0D0D; }
 
-      .field {
-        background-color: #ecf0f1;
-        padding: 14px 18px;
-        border-left: 6px solid #3498db;
-        border-radius: 6px;
-        margin-bottom: 18px;
-        display: flex;
-        align-items: center;
-      }
+  /* WELCOME MESSAGE */
+  .msg-box { border-left: 4px solid #00C4A7; background: #F0FDFB; padding: 12px 16px; margin-bottom: 14px; font-size: 9.5px; line-height: 1.6; color: #1A202C; }
+  .msg-box b { color: #0D0D0D; }
 
-      .icon {
-        font-size: 18px;
-        margin-right: 10px;
-        color: #2980b9;
-      }
+  /* ROADMAP TABLE */
+  .roadmap { width: 100%; border-collapse: collapse; border: 0.8px solid #E2E8F0; margin-bottom: 16px; }
+  .roadmap tr:nth-child(odd)  { background: #fff; }
+  .roadmap tr:nth-child(even) { background: #F8F9FA; }
+  .roadmap td { padding: 10px 14px; vertical-align: middle; }
+  .roadmap td.num { font-size: 13px; font-weight: 700; color: #00C4A7; width: 10%; border-right: 0.4px solid #E2E8F0; text-align: center; }
+  .roadmap td.content { width: 90%; }
+  .roadmap .step-title { font-size: 10px; font-weight: 700; color: #0D0D0D; margin-bottom: 3px; }
+  .roadmap .step-desc  { font-size: 8.5px; color: #64748B; line-height: 1.5; }
+  .roadmap tr:not(:last-child) td { border-bottom: 0.4px solid #E2E8F0; }
 
-      .label {
-        font-weight: 600;
-        width: 160px;
-        color: #34495e;
-      }
+  /* FOOTER */
+  .footer-divider { border: none; border-top: 0.8px solid #E2E8F0; margin-bottom: 8px; }
+  .footer { display: flex; justify-content: space-between; font-size: 8px; color: #64748B; }
+</style>
+</head>
+<body>
 
-      .value {
-        flex: 1;
-        color: #000;
-      }
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">NEXA NATIONS</div>
+  <div class="tagline">AI Agents &amp; Automation</div>
+</div>
+<div class="accent-bar"></div>
 
-      .footer {
-        border-top: 1px dashed #ccc;
-        margin-top: 50px;
-        padding-top: 20px;
-        font-size: 12px;
-        color: #888;
-        text-align: center;
-      }
+<!-- BODY -->
+<div class="body">
 
-      .footer span {
-        font-weight: bold;
-        color: #2c3e50;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="company-name">DICTATORS COUNT'S</div>
-        <div class="subtitle">Client Contract Document</div>
-      </div>
+  <!-- TITLE -->
+  <div class="doc-title">Onboarding Summary Report</div>
+  <div class="doc-sub">Confidential &nbsp;·&nbsp; Prepared for: {{client_name}} &nbsp;·&nbsp; Issued: {{date}}</div>
+  <hr class="divider">
 
-      <div class="section">
-        <div class="field">
-          <span class="icon">⏰</span>
-          <span class="label">Timestamp:</span>
-          <span class="value">{{Timestamp}}</span>
-        </div>
+  <!-- SECTION 1 -->
+  <div class="section-title">01 · Client Information</div>
+  <table class="info-table">
+    <tr><td class="label">FULL NAME</td><td class="value">{{client_name}}</td></tr>
+    <tr><td class="label">BUSINESS TYPE</td><td class="value">{{business_type}}</td></tr>
+    <tr><td class="label">EMAIL ADDRESS</td><td class="value">{{email}}</td></tr>
+    <tr><td class="label">SERVICE REQUIRED</td><td class="value">{{service}}</td></tr>
+    <tr><td class="label">ONBOARDING DATE</td><td class="value">{{date}}</td></tr>
+    <tr><td class="label">EXPECTED DELIVERY</td><td class="value">7 – 10 Business Days</td></tr>
+  </table>
 
-        <div class="field">
-          <span class="icon">👤</span>
-          <span class="label">Client Name:</span>
-          <span class="value">{{Name}}</span>
-        </div>
+  <!-- SECTION 2 -->
+  <div class="section-title">02 · Welcome Message</div>
+  <div class="msg-box">{{ai_message}}</div>
 
-        <div class="field">
-          <span class="icon">📧</span>
-          <span class="label">Email Address:</span>
-          <span class="value">{{Email}}</span>
-        </div>
+  <!-- SECTION 3 -->
+  <div class="section-title">03 · Onboarding Roadmap</div>
+  <table class="roadmap">
+    <tr>
+      <td class="num">01</td>
+      <td class="content">
+        <div class="step-title">Discovery Call</div>
+        <div class="step-desc">A 30-minute call to understand your requirements, business goals, and workflow expectations.</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="num">02</td>
+      <td class="content">
+        <div class="step-title">Blueprint Design</div>
+        <div class="step-desc">We design the full automation blueprint and share it with you for review before development begins.</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="num">03</td>
+      <td class="content">
+        <div class="step-title">Build &amp; Test</div>
+        <div class="step-desc">Our team builds and rigorously tests the system. Revisions are made until everything runs perfectly.</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="num">04</td>
+      <td class="content">
+        <div class="step-title">Go Live</div>
+        <div class="step-desc">The automation is deployed and fully operational. All repetitive tasks now run without manual effort.</div>
+      </td>
+    </tr>
+  </table>
 
-        <div class="field">
-          <span class="icon">🏢</span>
-          <span class="label">Company Name:</span>
-          <span class="value">{{CompanyName}}</span>
-        </div>
+  <!-- FOOTER -->
+  <hr class="footer-divider">
+  <div class="footer">
+    <span>contact@nexanations.com</span>
+    <span>www.nexanations.com</span>
+    <span>+91 8194931301</span>
+  </div>
 
-        <div class="field">
-          <span class="icon">🛠️</span>
-          <span class="label">Project Type:</span>
-          <span class="value">{{ProjectType}}</span>
-        </div>
-
-        <div class="field">
-          <span class="icon">📅</span>
-          <span class="label">Start Date:</span>
-          <span class="value">{{StartDate}}</span>
-        </div>
-      </div>
-
-      <div class="footer">
-        This document was auto-generated by <span>DICTATORS COUNT'S</span> system.<br>
-        Thank you for trusting us!
-      </div>
-    </div>
-  </body>
+</div>
+</body>
 </html>
