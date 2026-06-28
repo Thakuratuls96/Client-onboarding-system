@@ -1,74 +1,55 @@
-# 🚀 Client Onboarding Automation (Make.com)
+# 🚀 AI Client Onboarding Automation
 
-A fully no-code automation project built with [Make.com](https://www.make.com) to simplify client onboarding — from collecting form responses to sending a welcome email with a generated PDF.
+An automated client onboarding workflow built with **Make.com** that uses **Google Gemini AI** to generate personalized welcome messages, creates onboarding PDFs, stores them in Google Drive, and emails clients automatically.
 
----
+## Workflow
 
-## 🔧 Tools Used
+Google Sheets → Google Gemini AI → PDF.co → Google Drive → Gmail → Google Sheets
 
-- **Google Forms** – To collect client data  
-- **Google Sheets** – To store responses  
-- **Make.com** – To automate the process  
-- **PDF.co** – To generate personalized PDFs  
-- **Gmail** – To email clients automatically  
+## Features
 
----
+- Detects new client submissions
+- Generates AI-powered welcome messages
+- Sends an admin email if AI generation fails
+- Creates onboarding PDFs with PDF.co
+- Uploads PDFs to Google Drive
+- Emails clients with the PDF attached
+- Updates Google Sheets with the onboarding status
 
-## 🔁 Workflow Overview
+## Tech Stack
 
-1. Client submits information through Google Form  
-2. Data is stored in a connected Google Sheet  
-3. Make.com detects new row entry  
-4. The scenario:
-   - Generates a PDF using PDF.co  
-   - Sends an email via Gmail with the PDF attached  
-   - (Optional) Saves the PDF to Google Drive  
+- Make.com
+- Google Sheets
+- Google Gemini AI
+- PDF.co
+- Google Drive
+- Gmail
+- google sheet
 
----
-
-## ⭐ Key Features
-
-- 🔄 Fully automated process  
-- 🧾 Custom HTML-based PDF template  
-- 🧠 No coding required  
-- 📈 Scalable for teams or solo use  
-- ✅ Easy to replicate and reuse
-
----
-
-## 🖼 Scenario Snapshot
+## Preview
 
 > 📷 Visual representation of the Make.com automation scenario.
 
 ![Make Scenario Diagram](./assets/workflow-diagram.png)
 
----
+## 🔄 Workflow Diagram
 
-## 📂 Folder Structure
-
-```
-client-onboarding-automation/
-├── README.md
-├── make-scenario.md
-├── pdf-template.html
-├── .env.example
-└── assets/
-    └── workflow-diagram.png
-```
-
----
-
-## 📥 How to Use
-
-1. Clone this repository  
-2. Set up your `.env` file based on `.env.example`  
-3. Customize the `pdf-template.html` as needed  
-4. Rebuild the scenario in Make.com  
-5. Test the entire flow using your Google Form
-
----
-
-## 📄 License
-
-This project is open-source and intended for educational/demo purposes.  
-Feel free to use, fork, and modify as needed.
+```text
+Google Sheets
+      │
+      ▼
+Google Gemini AI
+      │
+      ├── Success ───────────────┐
+      │                          ▼
+      │                     PDF.co
+      │                          ▼
+      │                    Google Drive
+      │                          ▼
+      │                        Gmail
+      │                          ▼
+      │                   Google Sheets
+      │
+      └── Failure
+             ▼
+      Admin Email Notification
